@@ -1,3 +1,5 @@
+import css from 'modular-css/rollup';
+import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
@@ -8,5 +10,12 @@ export default {
 		nodeResolve({
 			jsnext: true,
 		}),
+		commonjs({
+			namedExports: {
+				'react': ['PropTypes', 'createElement'],
+				'reactabular-table': ['Provider', 'Header', 'Body'],
+			},
+		}),
+		css(),
 	],
 };
