@@ -1,3 +1,3 @@
-import { Logo } from './ui';
+import { Logo } from 'poki-ui';
 
 console.log(Logo());

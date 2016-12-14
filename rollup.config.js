@@ -5,6 +5,8 @@ export default {
 	dest: `dist/app.js`,
 	format: 'iife',
 	plugins: [
-		nodeResolve(),
+		nodeResolve({
+			jsnext: true,
+		}),
 	],
 };
