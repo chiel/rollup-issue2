@@ -1,0 +1,10 @@
+{
+  "name": "rollup-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.37.0",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  }
+}
